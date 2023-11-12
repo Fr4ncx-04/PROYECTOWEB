@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#presentacion">Presentación</a></li>
+                    <li><a href="#que-es">Qué es</a></li>
+                    <li><a href="#para-que-se-utiliza">Para qué se utiliza</a></li>
+                    <li><a href="#en-que-areas-se-utiliza">En qué áreas se utiliza</a></li>
+                    <li><a href="#ejemplo">Ejemplo</a></li>
+                    <li><a href="#formula">Formula</a></li>
+                    <li><a href="#ventajas">Ventajas</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Regla del trapecio</h1>
+            </div>
+            <button class="button-2" id="toggle-dark-mode">DarkMode</button>
+        </div>
+    </header>
+
+    <section id="presentacion" class="section container">
+        <h2>Presentación</h2>
+        <p class="t-1">
+            UNIVERSIDAD AUTONOMA DE CHIAPAS <br>
+            FACULTAD DE CONTADURIA Y ADMINISTRACION CAMPUS 1 <br>
+            LIDTS <br>
+            ALUMNO: JOSE FRANCISCO PENA MORALES <br>
+            PROYECTO: REGLA DEL TRAPECIO EXPLICADO CON <br>
+            UNA PAGINA WEB <br>
+            3ER SEMESTRE GRUPO: P <br>
+            11-NOV-23 <br>
+            TUXTLA GUTIERREZ, CHIAPAS.
+        </p>
+    </section>
+        </p>
+    </section>
+    <hr>
+
+    <section id="que-es" class="section container">
+        <h2>Qué es</h2>
+        <p class="t-2">
+            La regla del trapecio es un método utilizado en cálculo <br>
+            y análisis numérico para aproximar la integral definida <br>
+            de una función. Se basa en dividir el área bajo la curva <br>
+            de la función en pequeños trapecios y sumar sus áreas <br>
+            para obtener una aproximación de la integral.
+        </p>
+    </section>
+    <hr>
+
+    <section id="para-que-se-utiliza" class="section container">
+        <h2>Para qué se utiliza</h2>
+        <p class="t-3">
+            La regla del trapecio sirve para aproximar el área bajo una <br>
+            curva al dividirla en trapecios y sumar sus áreas. <br>
+            Es especialmente útil cuando no es posible o práctico calcular <br>
+            la integral de manera exacta.
+        </p>
+    </section>
+    <hr>
+
+    <section id="en-que-areas-se-utiliza" class="section container">
+        <h2>En qué áreas se utiliza</h2>
+        <p class="t-4">
+            La regla del trapecio se utiliza en física, economía y finanzas, <br>
+            ingeniería, ciencias de la computación, análisis de datos y matemáticas aplicadas.
+        </p>
+    </section>
+    <hr>
+
+    <section id="ejemplo" class="section container">
+        <h2>Ejemplo</h2>
+        <a href="https://www.youtube.com/watch?v=6ycBGPlX5sI">Ejemplo practico</a>
+        <img  class="img" src="img/ejemplo.jpeg" alt="" width="650px" height="500px">
+        <p class="t-5">
+            En este ejemplo vamos a calcular la integral de <br>
+            f(x) = ex^2 desde 0 hasta 5. para hacerlo primero <br>
+            obtenemos lo que se conoce como Dx o tambien <br>
+            representada como h, para obtener Dx debemos de <br>
+            conocer los limites de nuestro problema, en este <br>
+            caso son (0,1) y tambien necesitamos conocer <br>
+            nuestra n, la cual representa las partes a la <br>
+            que sera dividido nuestra funcion en base a los <br>
+            limites, en este caso n=5, ahora para conocer Dx, <br>
+            la formula es Dx=(b-a)/n, donde b es el límite <br>
+            superior y a es el límite inferior, por lo tanto <br>
+            Dx=(1-0)/5=0.2, conociendo Dx ahora hacemos las <br>
+            respectivas iteraciones en base a n lo cual como <br>
+            se ve en la plantilla de excel nos quedan 6 <br>
+            iteraciones de 0 hasta 5 y a cada uno le obtuvimos <br>
+            xi su formula es: (a + i) * Dx, como empezamos en la <br>
+            iteracion 0, hacemos la sustitucion: (0 + 0) * 0.2 = 0, <br>
+            hacemos esto en cada iteracion hasta cumplir con la <br>
+            ultima, luego lo que hacemos es sustituir las xi obtenidas <br>
+            en nuestra f(x)=ex^2 lo cual sustituido quedaria: <br>
+            f(0)=e(0^2)=1, hacemos esto con todas nuestras xi, <br>
+            despues usamos k la cual es una constante que se <br>
+            menciona en la formula ya que en esta nos dice que <br>
+            a partir de x1 es decir la iteracion uno hasta la <br>
+            iteracion cuatro se multiplicaran por dos estas xi, <br>
+            para la x inicial osea x0 y la x final osea x5 o xn, <br>
+            se multiplicaran por uno y asi obtendremos las areas <br>
+            de cada n, ya al final para obtener el area total sumamos <br>
+            cada area que obtuvimos al multiplicar por k ya en ultimo <br>
+            paso tomamos el area total, lo multiplicamos por Dx y <br>
+            dividimos entre 2 lo cual seria: (At * Dx) / 2 o como <br>
+            se ve en el excel: (14.8065 * 0.2)/ 2 = 1.4806, y de <br>
+            esta forma es como se aplica la regla del trapecio.
+        </p>
+    </section>
+    <hr>
+
+    <section id="formula" class="section container">
+        <h2>Formula</h2>
+        <p>
+            <img src="img/ejemplo2.jpeg" alt="">
+            <img class="img" src="img/ejemplo3.jpeg" alt="">
+        </p>
+    </section>
+    <hr>
+
+    <section id="ventajas" class="section container">
+        <h2>Ventajas</h2>
+        <p class="t-6">
+            -Simplicidad: Es fácil de entender e implementar. <br>
+            -Implementación eficiente: Puede proporcionar resultados <br>
+            aceptables con un número relativamente pequeño de subintervalos. <br>
+            -Aproximación razonable: Ofrece buenas estimaciones en ciertos casos, <br>
+            especialmente cuando la función es relativamente suave.
+        </p>
+    </section>
+    <hr>
+
+    <section id="conclusion" class="section container">
+        <h2>Conclusion</h2>
+        <p class="t-7">
+            La regla del trapecio es una herramienta valiosa en el campo del cálculo <br>
+            numérico. Aunque puede no ser la técnica más precisa en todos los casos, <br>
+            su simplicidad y eficiencia la hacen útil en situaciones donde otras métodos <br>
+            son difíciles de aplicar. Es especialmente útil cuando se necesita una <br>
+            aproximación rápida y aceptable del área bajo una curva.
+        </p>
+    </section>
+    <hr>
+
+    <script src="app.js"></script>
+</body>
+</html>
